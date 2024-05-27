@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'delivery.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': BASE_DIR / 'db.sqlite3',
+    #}
 
     #'default': {
     #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -104,14 +104,14 @@ DATABASES = {
     #    'PORT' : '5432',
     #}
     
-    #'default': {
-	   # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-	   # 'NAME': 'delivery_7gix',
-	   # 'USER' : 'delivery_admin',
-	   # 'PASSWORD' : 'iim7An34Ko6ZBGjaLmJ0Qlfe8SdbahPI',
-	   # 'HOST' : 'dpg-colrtlgl5elc73bojg10-a.frankfurt-postgres.render.com',
-	   # 'PORT' : '5432',
-    #}
+    'default': {
+	    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+	    'NAME': 'delivery_d2h4',
+	    'USER' : 'delivery_admin',
+	    'PASSWORD' : 'E3b8yLSvQ5oNlY2cCfyXP1oBARQKZlrs',
+	    'HOST' : 'dpg-cpaahn5ds78s73cunqtg-a.frankfurt-postgres.render.com',
+	    'PORT' : '5432',
+    }
 
 }
 
