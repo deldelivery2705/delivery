@@ -27,6 +27,9 @@ class ShopForm(forms.ModelForm):
             'link':  TextInput(attrs={"size":"100", "type":"url"}),            
             'details': Textarea(attrs={'cols': 100, 'rows': 10}),            
         }    
+        labels = {
+            'link': _('link'),            
+        }
 
 # Заявки
 class ApplicationForm(forms.ModelForm):
