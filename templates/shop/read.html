@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Read" %}{% endblock title %}
+{% block content %}
+<h2>{% trans "shop" %}</h2>
+<div class="row justify-content-center">
+	<div class="card" style="width:100%">
+		<div class="card-header">	
+			<h4>{{ shop.shop_title }}</h4>			
+		</div>
+		<div class="card-body">
+			<p><strong>{% trans "details" %}</strong>: {{ shop.details }}</p>			
+		</div>
+		<div class="card-footer">
+			{% if shop.link != None %}		
+				<p><a href="{{ shop.link }}" target="_blank">{{ shop.link }}</a></p>			
+			{% endif %}		
+		</div>	
+	</div>			
+	<div class="row justify-content-center">
+		<a class="btn btn-outline-info" style="width:120px" onclick="history.back();">{% trans "Back" %}</a>    	
+	</div>
+</div>
+{% endblock content %}

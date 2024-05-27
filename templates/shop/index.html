@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "shops" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "shops" %}</h2>
+<p><a href="{% url 'shop_create'%}">{% trans "Add" %}</a></p>
+<hr>
+{% if shop.count > 0 %}
+<table id="myTable" class="table-manager" style="width:100%">
+	<thead>
+		<tr>
+			<th><p>{% trans "shop_title" %}</p></th>
+			<th><p>{% trans "link" %}</p></th>
+			<th><p></p></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for n in shop %}
+		<tr>
+			<td>
+				<p>{{ n.shop_title }}</p>	
+			</td>
+			<td>
+				{% if n.link != None %}		
+					<p><a href="{{ n.link }}" target="_blank">{{ n.link }}</a></p>			
+				{% endif %}
+			</td>
+			<td>
+				<p>
+					<a href="{% url 'shop_edit' n.id %}">{% trans "Change" %}</a> |
+					<a href="{% url 'shop_read' n.id %}">{% trans "View" %}</a> |
+					<a onclick="return confirm('Удалить запись?')" href="{% url 'shop_delete' n.id %}">{% trans "Delete" %}</a>
+				</p>
+			</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{% endif %}
+{% endblock content %}
+
