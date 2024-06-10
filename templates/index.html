@@ -9,23 +9,294 @@
 
 <!-- Каталог -->
 <div class="div-width-100-text-center">
-	<h3>kyuubi (Кьюби)</h3>	
+	<h3>kyuubi (Кьюби)</h3>
 </div>
 
 <div class="row">
-	<div class="col-md-8">
-		<h3>Более 10 000 казахстанцев ежедневно заказывают товары в интернет-магазинах.</h3>	
+	<div class="col-md-8" style="padding:50px">
+	{% if LANGUAGE_CODE == 'kk' %}
+		<h3>Күн сайын 10 000-нан астам қазақстандық интернет-дүкендерден тауарларға тапсырыс береді.</h3>
+		<p>Онлайн сатып алу бүкіл әлемде бұрыннан танымал болды. Қазақстандық сатып алушылар да тауарларға онлайн тапсырыс бергенді жөн көреді. Бұл сатып алу пішімі жеке уақыт пен ақшаны үнемдеуге мүмкіндік береді. Бірақ кейде жеткізу мәселелері сатып алушының көлеңкесін түсіруі мүмкін. Біріншіден, АҚШ-тың интернет-дүкендерінің көпшілігі тауарларды тікелей Қазақстан қалаларына жөнелтпейтіндіктен проблемалар туындауы мүмкін.</p>
+		<p>Мысалы, ең үлкен eBay нарығындағы сатушылар халықаралық тасымалдау қызметтерін ұсына алмайды.</p>
+		<p>Американдық интернет-дүкендерде онлайн сатып алудың ләззатынан бас тартпаңыз. Өйткені, АҚШ-та сатып алу үшін делдалдар бар. <strong>kyuubi</strong> компаниясы барлық қиындықтарды жеңуге және тапсырысыңызды жылдам алуға көмектеседі.</p>
+	{% else %}
+		<h3>Более 10 000 казахстанцев ежедневно заказывают товары в интернет-магазинах.</h3>
 		<p>Онлайн-шопинг давно стал популярным во всем мире. Казахстанские покупатели также предпочитают заказывать товары через интернет. Такой формат шопинга позволяет экономить личное время и средства. Но иногда вопросы доставки могут омрачить покупателя. В первую очередь проблемы могут возникнуть с тем, что большинство интернет-магазинов США не отправляют товары напрямую в казахстанские города.</p>
 		<p>К примеру, продавцы на крупнейшей торговой площадке eBay не могут предложить услуги международной доставки.</p>
-		<p>Не стоит отказывать себе в удовольствии заниматься онлайн-шопингом в американских интернет-магазинах. Ведь есть посредники для покупки в США. Компания <strong>kyuubi</strong> поможет преодолеть все трудности и быстро получить заказ.</p> 
+		<p>Не стоит отказывать себе в удовольствии заниматься онлайн-шопингом в американских интернет-магазинах. Ведь есть посредники для покупки в США. Компания <strong>kyuubi</strong> поможет преодолеть все трудности и быстро получить заказ.</p>
+	{% endif %}
 	</div>
 	<div class="col-md-4" style="position:relative;overflow:hidden;">
-		<img src="{% static 'images/index.png' %}" alt="logo" style="width: 100%;">		
+		<img src="{% static 'images/index.png' %}" alt="logo" style="width: 100%;">
 		<div><a href="tel:+77083567850">+77083567850</a></div>
 		<div><a href="tel:+77473315290">+77473315290</a></div>
 		<div><a href="tel:kyuubi@gmail.com">kyuubi@gmail.com</a></div>
 	</div>
 </div>
+
+<div class="div-width-100-text-center">
+	{% if LANGUAGE_CODE == 'kk' %}
+		<h3>Жеткізуге қалай тапсырыс беруге болады?</h3>
+		<p>АҚШ-тан сатып алуды алу үшін үш қарапайым қадамды орындаңыз</p>
+	{% else %}
+		<h3>Как заказать доставку?</h3>
+		<p>Выполните три простых шага, чтобы получить покупку из США</p>
+	{% endif %}
+</div>
+<div class="row">
+	<div class="col-md-4" style="position:relative;overflow:hidden;">
+		<img src="{% static 'images/step1.png' %}" class="img-center3">
+	</div>
+	<div class="col-md-8" style="padding:50px">
+	{% if LANGUAGE_CODE == 'kk' %}
+		<h3>1-ҚАДАМ.АҚШ-та жеке мекенжай алыңыз</h3>
+		<p>АҚШ-тағы мекенжайды алу үшін сайтқа тіркеліңіз. Бұған 1 минут кетеді.</p>
+	{% else %}
+		<h3>ШАГ 1.Получите персональный адрес в США</h3>
+		<p>Зарегистрируйтесь на сайте, чтобы получить адрес в США. Это займет 1 минуту.</p>
+	{% endif %}
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8" style="padding:50px">
+	{% if LANGUAGE_CODE == 'kk' %}
+		<h3>2-ҚАДАМ. Сатып алуды алған мекенжайға жиберіңіз</h3>
+		<p>Сатып алу кезiнде алған мекенжайды көрсiңiз. Бізбен сіз сату салығынан босатасыз және арбір сатып алудан 5-9% үемдейсіз.</p>
+	{% else %}
+		<h3>ШАГ 2.Сатып алуды алынған мекенжайға жіберіңіз</h3>
+		<p>Сатып алу кезінде алынған мекенжайды көрсетіңіз. Бізбен сіз сату салығынан босатыласыз және әрбір сатып алудан 5-9% үнемдейсіз.</p>
+	{% endif %}
+	</div>
+	<div class="col-md-4" style="position:relative;overflow:hidden;">
+		<img src="{% static 'images/step2.png' %}" class="img-center3">
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4" style="position:relative;overflow:hidden;">
+		<img src="{% static 'images/step3.png' %}" class="img-center3">
+	</div>
+	<div class="col-md-8" style="padding:50px">
+	{% if LANGUAGE_CODE == 'kk' %}
+		<h3>3-ҚАДАМ. Қазақстанда сәлемдемелерді қабылдау</h3>
+		<p>Жеткізу жөнелтілген күннен бастап 7 күнді алады. Есептік жазбаңызда жеткізу күйін бақылап, сәлемдемеңізді бақылай аласыз.</p>
+	{% else %}
+		<h3>ШАГ 3. Примите посылки в Казахстане</h3>
+		<p>Доставка займет от 7 дней с момента отправки. В кабинете можно следить за статусом доставки и отслеживать вашу посылку.</p>
+	{% endif %}
+	</div>
+</div>
+
+<div class="div-width-100-text-center">
+	<h3>{% trans "F.A.Q." %}</h3>
+</div>
+<br>
+
+{% if LANGUAGE_CODE == 'kk' %}
+<div class="accordion accordion-flush" >
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="flush-heading01">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse01" aria-expanded="false" aria-controls="flush-collapse01">
+				Жеткізу үшін қалай тапсырыс беруге болады?
+			</button>
+		</h2>
+		<div id="flush-collapse01" class="accordion-collapse collapse" aria-labelledby="flush-heading01" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Жеке есептік жазбаңызға кіріңіз немесе жылдам тіркеуді аяқтаңыз. Тіркелгіңізде АҚШ-тағы мекенжайды табасыз. Мұны сатып алуларыңыз үшін жеткізу мекенжайы ретінде пайдаланыңыз. Дүкен сатып алуыңызды жіберген бойда бақылау нөмірі бар электрондық хат аласыз немесе оны дүкен тіркелгіңізде қадағалай аласыз.</p>
+				<p>Біздің веб-сайттағы жеке кабинетте әрбір жеке сәлемдеме үшін бақылау нөмірін қосыңыз. Осы сәттен бастап АҚШ-тан жеткізуге тапсырысыңыз қабылданған болып саналады. Сәлемдемелердің жеткізілу күйін қадағалаңыз және оларды Қазақстанда күтіңіз.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading02">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse02" aria-expanded="false" aria-controls="flush-collapse02">
+				Жеткізу қанша уақытты алады?
+			</button>
+		</h2>
+		<div id="flush-collapse02" class="accordion-collapse collapse" aria-labelledby="flush-heading02" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Қазақстанға жеткізу АҚШ-тағы біздің қоймадан сәлемдеме жіберілген сәттен бастап орта есеппен 7-10 күнді алады. Кейде рейстің кешігуіне, АҚШ-тағы мереке күндеріне немесе АҚШ-тағы негізгі сатылымдар күндеріндегі бос емес курьерлік қызметтерге байланысты мерзім ұзаруы мүмкін.</p>
+				<p>Егер мерзімдерде қандай да бір өзгерістер болса, себебін түсіндіретін хабарлама жібереміз. Кешігулер сирек кездеседі, дегенмен сәлемдемені белгілі бір күнге дейін алу қажет болса, уақытша жеткізу туралы қамқорлық жасауды ұсынамыз. Тапсырысыңызды сәл ертерек беріп көріңіз.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading03">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse03" aria-expanded="false" aria-controls="flush-collapse03">
+				Жеткізу үшін қалай төлеймін?
+			</button>
+		</h2>
+		<div id="flush-collapse03" class="accordion-collapse collapse" aria-labelledby="flush-heading03" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Сіз АҚШ-тан жеткізу ақысын сәлемдеме Қазақстанға келгеннен кейін несие картасымен немесе қолма-қол ақшамен төлеуіңіз керек.</p>
+				<p>Біз тек АҚШ-тағы қоймамыздан Қазақстанға жөнелту ақысын төлейтінімізді ескеріңіз. Сатып алу кезінде дүкен АҚШ-тағы біздің қоймаға жеткізу құнын қосса, оны өнімнің өзімен бірге өзіңіз төлейсіз.</p>
+				<p>Қазақстан бойынша жеткізу жергілікті курьерлік қызметтерге тарифтері мен төлем шарттарына сәйкес бөлек төленеді.</p>			
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading04">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse04" aria-expanded="false" aria-controls="flush-collapse04">
+				АҚШ-тың қай дүкендерінен сатып алуға болады?
+			</button>
+		</h2>
+		<div id="flush-collapse04" class="accordion-collapse collapse" aria-labelledby="flush-heading04" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Сіз АҚШ-қа жеткізілетін кез келген дүкендерден сатып ала аласыз. Тексерілген дүкендердің толық тізімі жеке есептік жазбаңызда қолжетімді.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading05">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse05" aria-expanded="false" aria-controls="flush-collapse05">
+				Жеткізу құнын қалай есептеу керек?
+			</button>
+		</h2>
+		<div id="flush-collapse05" class="accordion-collapse collapse" aria-labelledby="flush-heading05" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>АҚШ-тан Қазақстанға жеткізу құны сәлемдеменің салмағына байланысты – килограммына $13, 100 грамға дейін дөңгелектенеді. Мысалы, сәлемдеменің салмағы 200 грамм болса, жеткізу құны 2,6 долларды (0,2 кг × 13) құрайды.</p>
+				<p>Жеткізу құнын сәлемдеме Қазақстанға келгеннен кейін біле аласыз. Сіз веб-сайттағы калькулятордың көмегімен шамамен құнын есептей аласыз. Жеткізу құны нақты салмақтан жоғары болса, өлшемдік салмақ негізінде есептелуі мүмкін екенін ескеріңіз. Көлемдік салмақ мына формула арқылы есептеледі: Ұзындық (см) × Ені (см) × Биіктігі (см) / 6000.</p>
+				<p>Бір смартфонды жеткізу құны салмақ бойынша есептеледі. Егер сіз бірнеше смартфон жеткізіп жатсаңыз, есептеу бір смартфон үшін 15 АҚШ доллары тұратын тіркелген бағаға негізделген.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading06">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse06" aria-expanded="false" aria-controls="flush-collapse06">
+				Қандай өнімдерге тапсырыс беруге болмайды?
+			</button>
+		</h2>
+		<div id="flush-collapse06" class="accordion-collapse collapse" aria-labelledby="flush-heading06" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Біз заңды түрде саудадан шығарылған тауарларды әкеле алмаймыз. Мысалы, атыс қаруы немесе пневматикалық қару, әскери жарылғыш заттар, пестицидтер, есірткі заттары, ақша, жануарлар, жанғыш немесе жарылғыш заттар мен сұйықтықтары бар өнімдер, автомобиль майы, қысымды баллондар. Егер сізге белгілі бір өнімді әкелу қажет болса, оны жеткізуге тапсырыс бермес бұрын бізге хабарласқан дұрыс.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading07">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse07" aria-expanded="false" aria-controls="flush-collapse07">
+				Сатып алынған өнімді қалай қайтаруға болады?
+			</button>
+		</h2>
+		<div id="flush-collapse07" class="accordion-collapse collapse" aria-labelledby="flush-heading07" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Тауарды қайтару тауар сатып алынған дүкеннің шарттары бойынша жүзеге асырылады. Біз пакетті АҚШ-тан Қазақстанға жібермес бұрын қайтаруға көмектесеміз.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading08">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse08" aria-expanded="false" aria-controls="flush-collapse08">
+				Жеткізу мекенжайын қате енгізсем не істеуім керек?
+			</button>
+		</h2>
+		<div id="flush-collapse08" class="accordion-collapse collapse" aria-labelledby="flush-heading08" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Егер сіз мекенжайды қате көрсетсеңіз немесе АҚШ-тағы қоймамыздың мекенжайын көрсету кезінде қате жіберсеңіз, деректерді өзгерту үшін дүкенге өзіңіз хабарласуыңызға немесе көмек алу үшін бізге хабарласуыңызға болады. Егер деректерді дұрыс деректерге өзгерткеннен кейін тапсырысыңызды ақылы жеткізу қажет болса, бұл шығындарды сіз төлейсіз.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading09">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse09" aria-expanded="false" aria-controls="flush-collapse09">
+				Сатып алғаным үшін салық төлеуім керек пе?
+			</button>
+		</h2>
+		<div id="flush-collapse09" class="accordion-collapse collapse" aria-labelledby="flush-heading09" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Жіберушінің клиенттері АҚШ-тағы сату салығын төлемейді, бұл біздің ҚҚС-ға ұқсайды, өйткені қоймамыз салық салынбайтын мемлекетте орналасқан. Салықтан босату үшін есептік жазбаңызда Делавэр штатындағы (DE) мекенжайды таңдауыңыз қажет.</p>
+				<p>Бізбен сіз әрбір сатып алу құнының қосымша 5-9% үнемдейсіз.</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% else %}
+<div class="accordion accordion-flush" >
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="flush-heading01">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse01" aria-expanded="false" aria-controls="flush-collapse01">
+				Как оформить заказ на доставку?
+			</button>
+		</h2>
+		<div id="flush-collapse01" class="accordion-collapse collapse" aria-labelledby="flush-heading01" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Войдите в личный кабинет или пройдите быструю регистрацию. В кабинете вы найдете адрес в США. Используйте его в качестве адреса доставки своих покупок. Как только магазин отправит покупку, вы получите письмо с номером отправления (Tracking number) или сможете отследить его в аккаунте магазина.</p>
+				<p>В личном кабинете на нашем сайте добавьте трекинг номера для каждой отдельной посылки. С этого момента ваш заказ на доставку из США считается принятым. Отслеживайте статусы доставки своих посылок и ожидайте их в Казахстане.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading02">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse02" aria-expanded="false" aria-controls="flush-collapse02">
+				Сколько времени занимает доставка?
+			</button>
+		</h2>
+		<div id="flush-collapse02" class="accordion-collapse collapse" aria-labelledby="flush-heading02" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Доставка в Казахстан в среднем занимает 7-10 дней с момента отправки посылки с нашего склада в США. Иногда из-за задержек рейсов, праздничных дней в США, загруженности курьерских служб в дни крупных распродаж в США срок может увеличиться.</p>
+				<p>При любых изменениях сроков мы пришлем уведомление с объяснением причины. Задержки случаются редко, тем не менее рекомендуем позаботиться о временном запасе, если нужно получить посылку к определенному дню. Постарайтесь просто сделать заказ немного раньше.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading03">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse03" aria-expanded="false" aria-controls="flush-collapse03">
+				Как мне оплатить доставку?
+			</button>
+		</h2>
+		<div id="flush-collapse03" class="accordion-collapse collapse" aria-labelledby="flush-heading03" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Оплатить доставку из США нужно банковской картой или наличными после прибытия посылки в Казахстан.</p>
+				<p>Обратите внимание, что нам оплачивается только доставка от нашего склада в США до Казахстана. Если магазин включает в покупку стоимость доставки до нашего склада в США, то она оплачивается вами самостоятельно вместе с самим товаром.</p>
+				<p>Доставка внутри Казахстана также оплачивается отдельно местным курьерским службам согласно их тарифам и условиям оплаты.</p>			
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading04">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse04" aria-expanded="false" aria-controls="flush-collapse04">
+				В каких магазинах США можно делать покупки?
+			</button>
+		</h2>
+		<div id="flush-collapse04" class="accordion-collapse collapse" aria-labelledby="flush-heading04" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Покупать можно в любых магазинах, которые делают доставку в США. Полный список проверенных магазинов доступен в личном кабинете.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading05">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse05" aria-expanded="false" aria-controls="flush-collapse05">
+				Как рассчитать стоимость доставки?
+			</button>
+		</h2>
+		<div id="flush-collapse05" class="accordion-collapse collapse" aria-labelledby="flush-heading05" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Стоимость доставки из США в Казахстан зависит от веса посылки - 13 долларов за килограмм с округлением до 100 грамм. Например, если вес посылки составляет 200 грамм, то стоимость доставки составит 2,6 доллара (0,2 кг × 13).</p>
+				<p>Точную стоимость доставки вы узнаете после прибытия посылки в Казахстан. Рассчитать примерную стоимость можно с помощью калькулятора на сайте. Обратите внимание, что стоимость доставки может быть рассчитана по объемному весу, если он превышает фактический. Объемный вес рассчитывается по формуле: Длина (см) × Ширина (см) × Высота (см) / 6000.</p>
+				<p>Стоимость доставки одного смартфона рассчитывается по весу. Если вы доставляете более одного смартфона, то расчет осуществляется исходя из фиксированной цены – 15 долларов за один смартфон.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading06">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse06" aria-expanded="false" aria-controls="flush-collapse06">
+				Какие товары нельзя заказывать?
+			</button>
+		</h2>
+		<div id="flush-collapse06" class="accordion-collapse collapse" aria-labelledby="flush-heading06" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Мы не сможем привезти товары, которые законодательно выведены из товарооборота. Например, огнестрельное или пневматическое оружие, взрывчатые вещества боевого назначения, ядохимикаты, наркотические вещества, деньги, животных, продукцию с воспламеняющимися или взрывчатыми веществами и жидкостями, автомобильное масло, баллоны под давлением. Если нужно привезти специфический товар, то лучше свяжитесь с нами перед заказом на его доставку.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading07">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse07" aria-expanded="false" aria-controls="flush-collapse07">
+				Как вернуть приобретенный товар?
+			</button>
+		</h2>
+		<div id="flush-collapse07" class="accordion-collapse collapse" aria-labelledby="flush-heading07" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Возврат товара осуществляется на условиях магазина, у которого был приобретен товар. Мы можем помочь с возвратом посылки до момента ее отправления из США в Казахстан.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading08">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse08" aria-expanded="false" aria-controls="flush-collapse08">
+				Что делать, если неправильно указал адрес доставки?
+			</button>
+		</h2>
+		<div id="flush-collapse08" class="accordion-collapse collapse" aria-labelledby="flush-heading08" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Если вы указали неверный адрес или допустили ошибку при указании адреса нашего склада в США, то вы можете самостоятельно связаться с магазином для изменения данных или обратиться за помощью к нам. Если после изменения данных на верные потребуется платная пересылка вашего заказа, то эти расходы оплачиваются вами самостоятельно.</p>
+			</div>
+		</div>
+		<h2 class="accordion-header" id="flush-heading09">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse09" aria-expanded="false" aria-controls="flush-collapse09">
+				Буду ли я оплачивать налог при покупке?
+			</button>
+		</h2>
+		<div id="flush-collapse09" class="accordion-collapse collapse" aria-labelledby="flush-heading09" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Клиенты Shipper не платят американский налог с продаж – аналог нашего НДС, так как у нас есть склад, который расположен в безналоговом штате. Для освобождения от налога, вам нужно выбрать в кабинете адрес в штате Делавер (DE).</p>
+				<p>С нами вы экономите дополнительные 5-9% от стоимости каждой покупки.</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+
 
 
 {% endblock content %}

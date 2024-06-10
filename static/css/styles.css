@@ -224,7 +224,13 @@ pre {
   padding-bottom: 10px;
 }
 
+.div-width-100-text-center p{
+  color: Gold;		   
+}
 .div-width-100-text-center h1{
+  color: Gold;		   
+}
+.div-width-100-text-center h2{
   color: Gold;		   
 }
 .div-width-100-text-center h3{
